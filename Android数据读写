@@ -1,0 +1,17 @@
+## 『Java基础』InputStream 、 InputStreamReader和BufferedReader
+BLOG：http://blog.csdn.net/zgljl2012/article/details/47267609
+
+GEEKACADEMY例子：
+  URL url=new URL("wwww.baidu.com");
+  URLConnection connectoin=url.openConnection();
+  InputStream in=connection.getInputStream();
+  InputStreamReader isr=new InputStreamReader(in);
+  BufferedReader br=nwe BufferedReader(isr);
+  String line;
+  StringBuilder builder=new StringBuilder();
+  while(line=br.readLine()!=null){
+    builder.append(line);
+  }
+  br.close();
+  in.close();
+  return builder.toString();
